@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "progress_chick_panel.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

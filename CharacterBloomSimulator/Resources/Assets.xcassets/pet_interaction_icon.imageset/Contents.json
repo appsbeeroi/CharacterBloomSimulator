@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "pet_interaction_icon.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

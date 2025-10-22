@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "memory_card_nest.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

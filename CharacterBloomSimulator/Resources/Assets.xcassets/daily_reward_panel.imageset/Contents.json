@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "daily_reward_panel.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
