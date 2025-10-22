@@ -110,13 +110,13 @@ struct SettingsView: View {
     }
 
     private func openPrivacyPolicy() {
-        if let url = URL(string: "https://your-privacy-policy-url.com") {
+        if let url = URL(string: "https://sites.google.com/view/character-bloom-simulator/privacy-policy") {
             UIApplication.shared.open(url)
         }
     }
 
     private func openSupport() {
-        if let url = URL(string: "mailto:support@chickenbloom.com") {
+        if let url = URL(string: "mailto:hominhthanh650@gmail.com") {
             UIApplication.shared.open(url)
         }
     }
