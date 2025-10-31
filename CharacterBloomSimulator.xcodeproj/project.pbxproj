@@ -6,8 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7E1CC8BD2EB4E34E0031136A /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1CC8BC2EB4E34E0031136A /* OneSignalFramework */; };
+		7E1CC8BF2EB4E34E0031136A /* OneSignalInAppMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1CC8BE2EB4E34E0031136A /* OneSignalInAppMessages */; };
+		7E1CC8C22EB4E6610031136A /* FirebaseAnalyticsIdentitySupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1CC8C12EB4E6610031136A /* FirebaseAnalyticsIdentitySupport */; };
+		7E1CC8C42EB4E6610031136A /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1CC8C32EB4E6610031136A /* FirebaseRemoteConfig */; };
+		7E1CC8C72EB4E7F10031136A /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 7E1CC8C62EB4E7F10031136A /* AppsFlyerLib-Static */; };
+		7E96866D2EB4F6A900A0E158 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E96866C2EB4F6A900A0E158 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		F46DD3F12EA96E3400A9F1C6 /* CharacterBloomSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = CharacterBloomSimulator.app; path = "/Users/home/Desktop/AppBee/CharacterBloomSimulator/build/Debug-iphoneos/CharacterBloomSimulator.app"; sourceTree = "<absolute>"; };
+		7E1CC8292EB4E1920031136A /* CharacterBloomSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharacterBloomSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E96866C2EB4F6A900A0E158 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +46,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E1CC8BF2EB4E34E0031136A /* OneSignalInAppMessages in Frameworks */,
+				7E1CC8C72EB4E7F10031136A /* AppsFlyerLib-Static in Frameworks */,
+				7E1CC8BD2EB4E34E0031136A /* OneSignalFramework in Frameworks */,
+				7E1CC8C22EB4E6610031136A /* FirebaseAnalyticsIdentitySupport in Frameworks */,
+				7E1CC8C42EB4E6610031136A /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +60,9 @@
 		F46DCC862EA8D99300A9F1C6 = {
 			isa = PBXGroup;
 			children = (
+				7E96866C2EB4F6A900A0E158 /* GoogleService-Info.plist */,
 				F46DCC912EA8D99300A9F1C6 /* CharacterBloomSimulator */,
+				7E1CC8292EB4E1920031136A /* CharacterBloomSimulator.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,9 +86,14 @@
 			);
 			name = CharacterBloomSimulator;
 			packageProductDependencies = (
+				7E1CC8BC2EB4E34E0031136A /* OneSignalFramework */,
+				7E1CC8BE2EB4E34E0031136A /* OneSignalInAppMessages */,
+				7E1CC8C12EB4E6610031136A /* FirebaseAnalyticsIdentitySupport */,
+				7E1CC8C32EB4E6610031136A /* FirebaseRemoteConfig */,
+				7E1CC8C62EB4E7F10031136A /* AppsFlyerLib-Static */,
 			);
 			productName = CharacterBloomSimulator;
-			productReference = F46DD3F12EA96E3400A9F1C6 /* CharacterBloomSimulator.app */;
+			productReference = 7E1CC8292EB4E1920031136A /* CharacterBloomSimulator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,6 +120,11 @@
 			);
 			mainGroup = F46DCC862EA8D99300A9F1C6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7E1CC8BB2EB4E34E0031136A /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				7E1CC8C02EB4E6610031136A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7E1CC8C52EB4E7F10031136A /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F46DCC862EA8D99300A9F1C6;
 			projectDirPath = "";
@@ -113,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E96866D2EB4F6A900A0E158 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +278,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = CharacterBloomSimulator/CharacterBloomSimulator.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
@@ -260,6 +290,7 @@
 				INFOPLIST_FILE = CharacterBloomSimulator/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Character Bloom Simulator";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads and improve your app experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -278,7 +309,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.character.bloom.simulator.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -304,7 +335,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = CharacterBloomSimulator/CharacterBloomSimulator.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
@@ -314,6 +347,7 @@
 				INFOPLIST_FILE = CharacterBloomSimulator/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Character Bloom Simulator";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads and improve your app experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -332,7 +366,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.character.bloom.simulator.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -375,6 +409,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E1CC8BB2EB4E34E0031136A /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.15;
+			};
+		};
+		7E1CC8C02EB4E6610031136A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.5.0;
+			};
+		};
+		7E1CC8C52EB4E7F10031136A /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E1CC8BC2EB4E34E0031136A /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E1CC8BB2EB4E34E0031136A /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
+		7E1CC8BE2EB4E34E0031136A /* OneSignalInAppMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E1CC8BB2EB4E34E0031136A /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalInAppMessages;
+		};
+		7E1CC8C12EB4E6610031136A /* FirebaseAnalyticsIdentitySupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E1CC8C02EB4E6610031136A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsIdentitySupport;
+		};
+		7E1CC8C32EB4E6610031136A /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E1CC8C02EB4E6610031136A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		7E1CC8C62EB4E7F10031136A /* AppsFlyerLib-Static */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E1CC8C52EB4E7F10031136A /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */;
+			productName = "AppsFlyerLib-Static";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F46DCC872EA8D99300A9F1C6 /* Project object */;
 }
